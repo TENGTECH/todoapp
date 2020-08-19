@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>todoapp</title>
+
+	<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+	<link href="{% static "css/style.css" %}" rel="stylesheet">
+
+</head>
+<body>
+	
+	<div class="container">
+		<h1 class="text-white text-center mt-5">To Do List</h1>
+		<div id="task-container">
+			
+			<div id="form-wrapper">
+				<form id="form">
+					<div class="flex-wrapper">
+						<div style="flex: 6">
+							<input id="title" class="form-control" type="text" name="title" placeholder="Add task">
+						</div>
+						<div class="ml-1" >
+							<input id="submit" class="btn" type="submit" >
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div id="list-wrapper">
+			
+			</div>	
+		</div>
+
+	</div>
+
+	<script src="{% static "js/script.js" %}"  ></script>
+
+</body>
+</html>
